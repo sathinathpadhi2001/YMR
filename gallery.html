@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - YMR ShipChandlers</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&family=Exo+2:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Animated Background -->
+    <div class="maritime-bg">
+        <div class="waves-container">
+            <div class="wave wave1"></div>
+            <div class="wave wave2"></div>
+            <div class="wave wave3"></div>
+        </div>
+        <div class="floating-particles">
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top maritime-nav" data-aos="fade-down">
+        <div class="container">
+            <a href="index.html" class="navbar-brand maritime-logo">
+                <img src="image/ymr-logo.png" alt="YMR ShipChandlers Logo" class="logo-image">
+                <span class="logo-text">YMR ShipChandlers</span>
+                <div class="logo-waves"></div>
+            </a>
+
+            <button class="navbar-toggler maritime-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav">
+                <span class="toggler-line"></span>
+                <span class="toggler-line"></span>
+                <span class="toggler-line"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">
+                            <i class="fas fa-home"></i>
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">
+                            <i class="fas fa-info-circle"></i>
+                            <span>About Us</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">
+                            <i class="fas fa-cogs"></i>
+                            <span>Services</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="gallery.html">
+                            <i class="fas fa-images"></i>
+                            <span>Gallery</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">
+                            <i class="fas fa-envelope"></i>
+                            <span>Contact</span>
+                        </a>
+                    </li>
+                </ul>
+                <a href="get-quote.html" class="btn btn-maritime ms-3">
+                    <i class="fas fa-phone"></i>
+                    Get Quote
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="hero-maritime" style="min-height: 60vh;">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="row align-items-center justify-content-center text-center">
+                <div class="col-lg-8" data-aos="fade-up">
+                    <div class="hero-badge" data-aos="zoom-in" data-aos-delay="200">
+                        <i class="fas fa-images"></i>
+                        <span>Our Gallery</span>
+                    </div>
+                    <h1 class="hero-title" data-aos="fade-up" data-aos-delay="400">
+                        Showcasing Our
+                        <span class="text-gradient">Maritime Excellence</span>
+                    </h1>
+                    <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="600">
+                        Explore our comprehensive range of maritime supply services through our image gallery
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Content -->
+    <section class="about-preview-maritime py-5">
+        <div class="container">
+            <!-- Gallery Filter -->
+            <div class="row">
+                <div class="col-12 text-center mb-4" data-aos="fade-up">
+                    <div class="gallery-filter">
+                        <button class="filter-btn active" data-filter="all">
+                            <i class="fas fa-th"></i>
+                            All Services
+                        </button>
+                        <button class="filter-btn" data-filter="provision">
+                            <i class="fas fa-box"></i>
+                            Provision
+                        </button>
+                        <button class="filter-btn" data-filter="safety">
+                            <i class="fas fa-shield-alt"></i>
+                            Safety
+                        </button>
+                        <button class="filter-btn" data-filter="technical">
+                            <i class="fas fa-cogs"></i>
+                            Technical
+                        </button>
+                        <button class="filter-btn" data-filter="supplies">
+                            <i class="fas fa-tools"></i>
+                            Supplies
+                        </button>
+                        <button class="filter-btn" data-filter="services">
+                            <i class="fas fa-anchor"></i>
+                            Services
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gallery Search -->
+            <div class="row">
+                <div class="col-12 mb-4" data-aos="fade-up">
+                    <div class="gallery-search">
+                        <div class="input-group">
+                            <span class="input-group-text">
+                                <i class="fas fa-search"></i>
+                            </span>
+                            <input type="text" class="form-control search-input" placeholder="Search images...">
+                            <button class="btn btn-outline-secondary search-clear" type="button" style="display: none;">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="row g-4" id="galleryGrid">
+                <div class="col-lg-4 col-md-6 gallery-item" data-category="provision" data-aos="fade-up"
+                    data-aos-delay="100">
+                    <div class="gallery-card">
+                        <div class="gallery-image">
+                            <img src="image/Provision stores1.jpeg" alt="Provision Stores 1" loading="lazy">
+                            <div class="gallery-overlay">
+                                <div class="gallery-content">
+                                    <h5>Provision Stores</h5>
+                                    <p>Complete food and beverage supplies</p>
+                                    <button class="btn btn-maritime btn-sm gallery-view-btn">
+                                        <i class="fas fa-eye"></i>
+                                        View
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 gallery-item" data-category="provision" data-aos="fade-up"
+                    data-aos-delay="200">
+                    <div class="gallery-card">
+                        <div class="gallery-image">
+                            <img src="image/Provision stores2.jpeg" alt="Provision Stores 2" loading="lazy">
+                            <div class="gallery-overlay">
+                                <div class="gallery-content">
+                                    <h5>Provision Stores</h5>
+                                    <p>Fresh and quality provisions</p>
+                                    <button class="btn btn-maritime btn-sm gallery-view-btn">
+                                        <i class="fas fa-eye"></i>
+                                        View
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 gallery-item" data-category="safety" data-aos="fade-up"
+                    data-aos-delay="300">
+                    <div class="gallery-card">
+                        <div class="gallery-image">
+                            <img src="image/Safety stores.jpeg" alt="Safety Equipment" loading="lazy">
+                            <div class="gallery-overlay">
+                                <div class="gallery-content">
+                                    <h5>Safety Equipment</h5>
+                                    <p>Comprehensive safety solutions</p>
+                                    <button class="btn btn-maritime btn-sm gallery-view-btn">
+                                        <i class="fas fa-eye"></i>
+                                        View
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 gallery-item" data-category="safety" data-aos="fade-up"
+                    data-aos-delay="100">
+                    <div class="gallery-card">
+                        <div class="gallery-image">
+                            <img src="https://www.oneocean.com/wp-content/uploads/2025/09/1440x960_security_officers_on_ship.jpg"
+                                alt="Piracy Equipment 1" loading="lazy">
+                            <div class="gallery-overlay">
+                                <div class="gallery-content">
+                                    <h5>Piracy Protection</h5>
+                                    <p>Advanced security equipment</p>
+                                    <button class="btn btn-maritime btn-sm gallery-view-btn">
+                                        <i class="fas fa-eye"></i>
+                                        View
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 gallery-item" data-category="safety" data-aos="fade-up"
+                    data-aos-delay="200">
+                    <div class="gallery-card">
+                        <div class="gallery-image">
+                            <img src="https://static.wixstatic.com/media/18b4e1_392049f730754deeb7283ac5d9a3793b~mv2.jpg/v1/fill/w_625,h_416,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/18b4e1_392049f730754deeb7283ac5d9a3793b~mv2.jpg"
+                                alt="Piracy Equipment 2" loading="lazy">
+                            <div class="gallery-overlay">
+                                <div class="gallery-content">
+                                    <h5>Piracy Protection</h5>
+                                    <p>Ship security systems</p>
+                                    <button class="btn btn-maritime btn-sm gallery-view-btn">
+                                        <i class="fas fa-eye"></i>
+                                        View
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 gallery-item" data-category="safety" data-aos="fade-up"
+                    data-aos-delay="300">
+                    <div class="gallery-card">
+                        <div class="gallery-image">
+                            <img src="https://bytescare.com/blog/wp-content/uploads/2024/07/what-is-piracy-protection-bytescare.svg"
+                                alt="Piracy Equipment 3" loading="lazy">
+                            <div class="gallery-overlay">
+                                <div class="gallery-content">
+                                    <h5>Piracy Protection</h5>
+                                    <p>Maritime security gear</p>
+                                    <button class="btn btn-maritime btn-sm gallery-view-btn">
+                                        <i class="fas fa-eye"></i>
+                                        View
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 gallery-item" data-category="technical" data-aos="fade-up"
+                    data-aos-delay="100">
+                    <div class="gallery-card">
+                        <div class="gallery-image">
+                            <img src="image/On board repairing.jpeg" alt="Onboard Repairs" loading="lazy">
+                            <div class="gallery-overlay">
+                                <div class="gallery-content">
+                                    <h5>Onboard Repairs</h5>
+                                    <p>Expert technical services</p>
+                                    <button class="btn btn-maritime btn-sm gallery-view-btn">
+                                        <i class="fas fa-eye"></i>
+                                        View
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 gallery-item" data-category="technical" data-aos="fade-up"
+                    data-aos-delay="200">
+                    <div class="gallery-card">
+                        <div class="gallery-image">
+                            <img src="image/ship spares connectivity1.jpeg" alt="Ship Spares 1" loading="lazy">
+                            <div class="gallery-overlay">
+                                <div class="gallery-content">
+                                    <h5>Ship Spares</h5>
+                                    <p>Quality spare parts</p>
+                                    <button class="btn btn-maritime btn-sm gallery-view-btn">
+                                        <i class="fas fa-eye"></i>
+                                        View
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 gallery-item" data-category="technical" data-aos="fade-up"
+                    data-aos-delay="300">
+                    <div class="gallery-card">
+                        <div class="gallery-image">
+                            <img src="image/ship spares connectivity2.jpeg" alt="Ship Spares 2" loading="lazy">
+                            <div class="gallery-overlay">
+                                <div class="gallery-content">
+                                    <h5>Ship Spares</h5>
+                                    <p>Connectivity solutions</p>
+                                    <button class="btn btn-maritime btn-sm gallery-view-btn">
+                                        <i class="fas fa-eye"></i>
+                                        View
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 gallery-item" data-category="technical" data-aos="fade-up"
+                    data-aos-delay="100">
+                    <div class="gallery-card">
+                        <div class="gallery-image">
+                            <img src="image/Engine stores.jpeg" alt="Engine Stores" loading="lazy">
+                            <div class="gallery-overlay">
+                                <div class="gallery-content">
+                                    <h5>Engine Stores</h5>
+                                    <p>Engine room supplies</p>
+                                    <button class="btn btn-maritime btn-sm gallery-view-btn">
+                                        <i class="fas fa-eye"></i>
+                                        View
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 gallery-item" data-category="technical" data-aos="fade-up"
+                    data-aos-delay="200">
+                    <div class="gallery-card">
+                        <div class="gallery-image">
+                            <img src="image/Electrical stores.jpeg" alt="Electrical Supplies" loading="lazy">
+                            <div class="gallery-overlay">
+                                <div class="gallery-content">
+                                    <h5>Electrical Supplies</h5>
+                                    <p>Complete electrical solutions</p>
+                                    <button class="btn btn-maritime btn-sm gallery-view-btn">
+                                        <i class="fas fa-eye"></i>
+                                        View
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 gallery-item" data-category="supplies" data-aos="fade-up"
+                    data-aos-delay="300">
+                    <div class="gallery-card">
+                        <div class="gallery-image">
+                            <img src="image/Lube oil supply.jpeg" alt="Lube Oil Supply" loading="lazy">
+                            <div class="gallery-overlay">
+                                <div class="gallery-content">
+                                    <h5>Lube Oil Supply</h5>
+                                    <p>Premium marine lubricants</p>
+                                    <button class="btn btn-maritime btn-sm gallery-view-btn">
+                                        <i class="fas fa-eye"></i>
+                                        View
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 gallery-item" data-category="supplies" data-aos="fade-up"
+                    data-aos-delay="100">
+                    <div class="gallery-card">
+                        <div class="gallery-image">
+                            <img src="image/Deck stores.jpeg" alt="Deck Stores" loading="lazy">
+                            <div class="gallery-overlay">
+                                <div class="gallery-content">
+                                    <h5>Deck Stores</h5>
+                                    <p>Complete deck supplies</p>
+                                    <button class="btn btn-maritime btn-sm gallery-view-btn">
+                                        <i class="fas fa-eye"></i>
+                                        View
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 gallery-item" data-category="supplies" data-aos="fade-up"
+                    data-aos-delay="200">
+                    <div class="gallery-card">
+                        <div class="gallery-image">
+                            <img src="image/Deck stores2.jpeg" alt="Deck Stores 2" loading="lazy">
+                            <div class="gallery-overlay">
+                                <div class="gallery-content">
+                                    <h5>Deck Stores</h5>
+                                    <p>Deck maintenance equipment</p>
+                                    <button class="btn btn-maritime btn-sm gallery-view-btn">
+                                        <i class="fas fa-eye"></i>
+                                        View
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 gallery-item" data-category="supplies" data-aos="fade-up"
+                    data-aos-delay="300">
+                    <div class="gallery-card">
+                        <div class="gallery-image">
+                            <img src="image/Marine paint and chemicals.jpeg" alt="Marine Paints" loading="lazy">
+                            <div class="gallery-overlay">
+                                <div class="gallery-content">
+                                    <h5>Marine Paints</h5>
+                                    <p>Quality paints and chemicals</p>
+                                    <button class="btn btn-maritime btn-sm gallery-view-btn">
+                                        <i class="fas fa-eye"></i>
+                                        View
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 gallery-item" data-category="services" data-aos="fade-up"
+                    data-aos-delay="100">
+                    <div class="gallery-card">
+                        <div class="gallery-image">
+                            <img src="image/Shore and offshore services1.jpg" alt="Shore Services 1" loading="lazy">
+                            <div class="gallery-overlay">
+                                <div class="gallery-content">
+                                    <h5>Shore Services</h5>
+                                    <p>Port coordination services</p>
+                                    <button class="btn btn-maritime btn-sm gallery-view-btn">
+                                        <i class="fas fa-eye"></i>
+                                        View
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 gallery-item" data-category="services" data-aos="fade-up"
+                    data-aos-delay="200">
+                    <div class="gallery-card">
+                        <div class="gallery-image">
+                            <img src="image/Shore and offshore services2.jpeg" alt="Shore Services 2" loading="lazy">
+                            <div class="gallery-overlay">
+                                <div class="gallery-content">
+                                    <h5>Offshore Services</h5>
+                                    <p>Comprehensive support</p>
+                                    <button class="btn btn-maritime btn-sm gallery-view-btn">
+                                        <i class="fas fa-eye"></i>
+                                        View
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 gallery-item" data-category="services" data-aos="fade-up"
+                    data-aos-delay="300">
+                    <div class="gallery-card">
+                        <div class="gallery-image">
+                            <img src="image/frontpage1.jpg" alt="YMR Operations 1" loading="lazy">
+                            <div class="gallery-overlay">
+                                <div class="gallery-content">
+                                    <h5>Our Operations</h5>
+                                    <p>Professional service delivery</p>
+                                    <button class="btn btn-maritime btn-sm gallery-view-btn">
+                                        <i class="fas fa-eye"></i>
+                                        View
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 gallery-item" data-category="services" data-aos="fade-up"
+                    data-aos-delay="100">
+                    <div class="gallery-card">
+                        <div class="gallery-image">
+                            <img src="image/frontpage2.jpg" alt="YMR Operations 2" loading="lazy">
+                            <div class="gallery-overlay">
+                                <div class="gallery-content">
+                                    <h5>Our Operations</h5>
+                                    <p>Maritime excellence</p>
+                                    <button class="btn btn-maritime btn-sm gallery-view-btn">
+                                        <i class="fas fa-eye"></i>
+                                        View
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Image Lightbox Modal -->
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content bg-dark">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title text-white" id="imageModalLabel">Image Preview</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center p-0">
+                    <img src="" alt="" class="img-fluid" id="modalImage">
+                </div>
+                <div class="modal-footer border-0 justify-content-between">
+                    <button type="button" class="btn btn-maritime" id="prevImage">
+                        <i class="fas fa-chevron-left"></i>
+                        Previous
+                    </button>
+                    <button type="button" class="btn btn-maritime" id="nextImage">
+                        <i class="fas fa-chevron-right"></i>
+                        Next
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer-maritime">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="footer-brand">
+                        <h3>YMR ShipChandlers</h3>
+                        <p>Your trusted partner in maritime supplies, delivering excellence across all major Indian
+                            ports.</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="footer-links">
+                        <h5>Quick Links</h5>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="footer-links">
+                        <h5>Services</h5>
+                        <ul>
+                            <li><a href="services.html">Provision Stores</a></li>
+                            <li><a href="services.html">Safety Equipment</a></li>
+                            <li><a href="services.html">Ship Spares</a></li>
+                            <li><a href="services.html">Onboard Repairs</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3" data-aos="fade-up" data-aos-delay="400">
+                    <div class="footer-contact">
+                        <h5>Contact Info</h5>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Gautam Nagar 5th Lane,<br>Brahmapur, Odisha 761001</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>ymrshipchandlers@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>7788956692 / 8338850999</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <p>&copy; 2024 YMR ShipChandlers. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animation JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>

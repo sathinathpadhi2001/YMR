@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Contact Form - YMR ShipChandlers</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .form-container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #333;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+        input:focus, select:focus, textarea:focus {
+            border-color: #2E86AB;
+            outline: none;
+        }
+        button {
+            background-color: #2E86AB;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            width: 100%;
+        }
+        button:hover {
+            background-color: #1A5F7A;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .note {
+            background-color: #e8f4fd;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            border-left: 4px solid #2E86AB;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <div class="header">
+            <h1>YMR ShipChandlers</h1>
+            <h2>Test Contact Form</h2>
+        </div>
+        
+        <div class="note">
+            <strong>Note:</strong> This is a test form to verify email functionality. 
+            Fill out the form below and submit to test if emails are being sent to ymrshipchandlers@gmail.com
+        </div>
+
+        <form action="https://formsubmit.co/ymrshipchandlers@gmail.com" method="POST">
+            <!-- FormSubmit Configuration -->
+            <input type="hidden" name="_subject" value="TEST - Maritime Supply Inquiry from Website">
+            <input type="hidden" name="_next" value="thank-you.html">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="text" name="_honey" style="display:none">
+
+            <div class="form-group">
+                <label for="vessel">Vessel Name *</label>
+                <input type="text" id="vessel" name="Vessel Name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="port">Port Details *</label>
+                <input type="text" id="port" name="Port Details" required>
+            </div>
+
+            <div class="form-group">
+                <label for="name">Contact Person *</label>
+                <input type="text" id="name" name="Contact Person" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="Email Address" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="Phone Number">
+            </div>
+
+            <div class="form-group">
+                <label for="service">Service Required *</label>
+                <select id="service" name="Service Required" required>
+                    <option value="">Select a service</option>
+                    <option value="Provision Stores">Provision Stores</option>
+                    <option value="Safety Equipment">Safety Equipment</option>
+                    <option value="Ship Spares">Ship Spares</option>
+                    <option value="Onboard Repairs">Onboard Repairs</option>
+                    <option value="Lube Oil Supply">Lube Oil Supply</option>
+                    <option value="Marine Paint & Chemicals">Marine Paint & Chemicals</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message *</label>
+                <textarea id="message" name="Message" rows="5" required placeholder="Please describe your requirements..."></textarea>
+            </div>
+
+            <button type="submit">Send Test Message</button>
+        </form>
+
+        <div style="margin-top: 30px; text-align: center;">
+            <p><a href="index.html">← Back to Main Website</a></p>
+            <p><strong>Contact:</strong> ymrshipchandlers@gmail.com | +91 7788956692</p>
+        </div>
+    </div>
+</body>
+</html>
