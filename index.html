@@ -4,380 +4,181 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YMR ShipChandlers - Your Trusted Partner in Maritime Supplies</title>
+    <meta name="description" content="YMR ShipChandlers - Professional maritime supplies and services in all major Indian ports.">
+    <title>YMR ShipChandlers | Excellence in Maritime Supply</title>
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <!-- AOS Animation Library -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <!-- Custom Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&family=Exo+2:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
-
     <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <!-- Animated Background -->
-    <div class="maritime-bg">
-        <div class="waves-container">
-            <div class="wave wave1"></div>
-            <div class="wave wave2"></div>
-            <div class="wave wave3"></div>
-        </div>
-        <div class="floating-particles">
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-        </div>
-    </div>
+    <!-- Custom Cursor -->
+    <div class="custom-cursor"></div>
+    <div class="custom-cursor-outline"></div>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg fixed-top maritime-nav" data-aos="fade-down">
+    <nav class="navbar navbar-expand-lg fixed-top maritime-nav">
         <div class="container">
-            <a href="index.html" class="navbar-brand maritime-logo">
-                <img src="image/ymr-logo.png" alt="YMR ShipChandlers Logo" class="logo-image">
-                <span class="logo-text">YMR ShipChandlers</span>
-                <div class="logo-waves"></div>
+            <a href="index.html" class="navbar-brand">
+                <img src="image/ymr-logo.png" alt="YMR Logo" class="logo-image">
+                <span class="logo-text">YMR <span>ShipChandlers</span></span>
             </a>
-
-            <button class="navbar-toggler maritime-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarNav">
-                <span class="toggler-line"></span>
-                <span class="toggler-line"></span>
-                <span class="toggler-line"></span>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
             </button>
 
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="index.html">
-                            <i class="fas fa-home"></i>
-                            <span>Home</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">
-                            <i class="fas fa-info-circle"></i>
-                            <span>About Us</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="services.html">
-                            <i class="fas fa-cogs"></i>
-                            <span>Services</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="gallery.html">
-                            <i class="fas fa-images"></i>
-                            <span>Gallery</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">
-                            <i class="fas fa-envelope"></i>
-                            <span>Contact</span>
-                        </a>
-                    </li>
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                 </ul>
-                <a href="get-quote.html" class="btn btn-maritime ms-3">
-                    <i class="fas fa-phone"></i>
-                    Get Quote
-                </a>
+                <a href="get-quote.html" class="btn btn-maritime ms-lg-4">Get a Quote <i class="fas fa-paper-plane"></i></a>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero-maritime" id="home">
-        <div class="hero-overlay"></div>
+    <section class="hero-maritime hero-home">
         <div class="container">
-            <div class="row align-items-center min-vh-100">
-                <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1000">
-                    <div class="hero-content">
-                        <div class="hero-badge" data-aos="zoom-in" data-aos-delay="200">
-                            <i class="fas fa-ship"></i>
-                            <span>Maritime Excellence Since 2024</span>
-                        </div>
-                        <h1 class="hero-title" data-aos="fade-up" data-aos-delay="400">
-                            Your Trusted Partner in
-                            <span class="text-gradient">Maritime Supplies</span>
-                        </h1>
-                        <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="600">
-                            Delivering excellence in shipping services across all major Indian ports with comprehensive
-                            maritime solutions
-                        </p>
-                        <div class="hero-stats" data-aos="fade-up" data-aos-delay="800">
-                            <div class="stat-item">
-                                <h3>24/7</h3>
-                                <p>Service</p>
-                            </div>
-                            <div class="stat-item">
-                                <h3>40+</h3>
-                                <p>Vessels</p>
-                            </div>
-                            <div class="stat-item">
-                                <h3>10+</h3>
-                                <p>Ports</p>
-                            </div>
-                        </div>
-                        <div class="hero-buttons" data-aos="fade-up" data-aos-delay="1000">
-                            <a href="services.html" class="btn btn-maritime btn-lg">
-                                <i class="fas fa-cogs"></i>
-                                Our Services
-                            </a>
-                            <a href="contact.html" class="btn btn-outline-light btn-lg">
-                                <i class="fas fa-envelope"></i>
-                                Get in Touch
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
-                    <div class="hero-visual">
-                        <div class="hero-image-container">
-                            <img src="image/frontpage1.jpg" alt="YMR ShipChandlers Operations" class="hero-image">
-                            <div class="image-overlay">
-                                <div class="floating-icon">
-                                    <i class="fas fa-anchor"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="hero-decorations">
-                            <div class="decoration-circle circle-1"></div>
-                            <div class="decoration-circle circle-2"></div>
-                            <div class="decoration-circle circle-3"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Scroll Indicator -->
-        <div class="scroll-indicator" data-aos="bounce" data-aos-delay="1500">
-            <div class="scroll-mouse">
-                <div class="scroll-wheel"></div>
-            </div>
-            <span>Scroll Down</span>
-        </div>
-    </section>
-
-    <!-- About Preview Section -->
-    <section class="about-preview-maritime py-5" id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 text-center mb-5" data-aos="fade-up">
-                    <div class="section-badge">
-                        <i class="fas fa-compass"></i>
-                        <span>Who We Are</span>
-                    </div>
-                    <h2 class="section-title">Excellence in Maritime Supply</h2>
-                    <div class="section-divider"></div>
-                </div>
-            </div>
             <div class="row align-items-center">
-                <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1000">
-                    <div class="about-content">
-                        <p class="lead">YMR provides essential supplies and services to ships and seafarers, having its
-                            experience in supplying of provisions, stores, spare parts, piracy equipments and all types
-                            of vessel requirements.</p>
-                        <p>We also provide shore and offshore services, on board repairing, etc at all major Indian
-                            ports. We assure charting quality, ensuring timely deliveries.</p>
-
-                        <div class="about-features">
-                            <div class="feature-item" data-aos="fade-up" data-aos-delay="200">
-                                <i class="fas fa-check-circle"></i>
-                                <span>Quality Assurance</span>
-                            </div>
-                            <div class="feature-item" data-aos="fade-up" data-aos-delay="400">
-                                <i class="fas fa-clock"></i>
-                                <span>Timely Delivery</span>
-                            </div>
-                            <div class="feature-item" data-aos="fade-up" data-aos-delay="600">
-                                <i class="fas fa-shield-alt"></i>
-                                <span>Trusted Partner</span>
-                            </div>
+                <div class="col-lg-7">
+                    <div class="hero-content" data-aos="fade-right">
+                        <div class="hero-badge">Maritime Excellence Since 2024</div>
+                        <h1 class="hero-title">Your Trusted Partner in <span>Maritime Supplies</span></h1>
+                        <p class="hero-subtitle">Delivering excellence in shipping services across all major Indian ports with comprehensive maritime solutions and 24/7 support.</p>
+                        <div class="hero-buttons d-flex gap-3">
+                            <a href="services.html" class="btn btn-maritime">Explore Services</a>
+                            <a href="contact.html" class="btn btn-outline-maritime">Contact Us</a>
                         </div>
-
-                        <a href="about.html" class="btn btn-maritime mt-4" data-aos="fade-up" data-aos-delay="800">
-                            <i class="fas fa-arrow-right"></i>
-                            Learn More About Us
-                        </a>
                     </div>
                 </div>
-                <div class="col-lg-6" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
-                    <div class="about-image-container">
-                        <img src="image/frontpage2.jpg" alt="YMR Operations" class="about-image">
-                        <div class="image-frame"></div>
-                        <div class="floating-badge">
-                            <i class="fas fa-award"></i>
-                            <span>Trusted</span>
+                <div class="col-lg-5 d-none d-lg-block" data-aos="zoom-in">
+                    <div class="hero-image-wrapper floating">
+                        <img src="image/frontpage1.jpg" alt="Maritime Ship" class="img-fluid rounded-4 shadow-lg">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Unique Wave Divider -->
+        <div class="wave-divider">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Excellence Section -->
+    <section class="about-section py-5" style="background: var(--clr-bg-light);">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="about-image-wrapper floating" style="animation-delay: -2s;">
+                        <img src="image/frontpage2.jpg" alt="Maritime Operations" class="img-fluid rounded-4 shadow-lg">
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="about-content ps-lg-5">
+                        <span class="section-badge">Who We Are</span>
+                        <h2 class="section-title">Excellence in Maritime Supply</h2>
+                        <p class="lead">YMR provides essential supplies and services to ships and seafarers, with extensive experience in provisions, stores, spare parts, and all vessel requirements.</p>
+                        <p>We operate across all major Indian ports, ensuring timely deliveries and uncompromising quality for every vessel we serve.</p>
+                        <div class="about-features mt-4">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="fas fa-check-circle text-primary me-3"></i>
+                                <span class="fw-bold">Quality Assured Products</span>
+                            </div>
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="fas fa-clock text-primary me-3"></i>
+                                <span class="fw-bold">Timely & Reliable Delivery</span>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-shield-alt text-primary me-3"></i>
+                                <span class="fw-bold">Experienced Maritime Team</span>
+                            </div>
                         </div>
+                        <a href="about.html" class="btn btn-maritime mt-5">Discover Our Story</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Services Preview Section -->
-    <section class="services-preview-maritime py-5">
-        <div class="container">
+    <!-- Services Section -->
+    <section class="services-section py-5">
+        <div class="container py-5">
             <div class="row">
                 <div class="col-12 text-center mb-5" data-aos="fade-up">
-                    <div class="section-badge">
-                        <i class="fas fa-tools"></i>
-                        <span>What We Offer</span>
-                    </div>
-                    <h2 class="section-title text-white">Comprehensive Maritime Solutions</h2>
-                    <div class="section-divider"></div>
+                    <span class="section-badge">Our Expertise</span>
+                    <h2 class="section-title">Comprehensive Maritime Solutions</h2>
                 </div>
             </div>
             <div class="row g-4">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up">
+                    <div class="service-card-maritime">
+                        <div class="service-icon"><i class="fas fa-shopping-basket"></i></div>
+                        <h4>Provision Stores</h4>
+                        <p>Complete supply of fresh food, beverages, and essential provisions tailored for crew welfare and optimal health.</p>
+                        <a href="services.html" class="btn btn-link text-primary p-0 mt-3 fw-bold">Learn More <i class="fas fa-chevron-right ms-2"></i></a>
+                    </div>
+                </div>
                 <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
                     <div class="service-card-maritime">
-                        <div class="service-icon">
-                            <i class="fas fa-box"></i>
-                        </div>
-                        <h4>Provision Stores</h4>
-                        <p>Complete supply of food, beverages, and essential provisions for crew welfare</p>
-                        <div class="service-arrow">
-                            <i class="fas fa-arrow-right"></i>
-                        </div>
+                        <div class="service-icon"><i class="fas fa-user-shield"></i></div>
+                        <h4>Safety & Piracy Protection</h4>
+                        <p>Advanced security solutions and anti-piracy equipment designed to protect your vessel and crew in high-risk zones.</p>
+                        <a href="services.html" class="btn btn-link text-primary p-0 mt-3 fw-bold">Learn More <i class="fas fa-chevron-right ms-2"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
                     <div class="service-card-maritime">
-                        <div class="service-icon">
-                            <i class="fas fa-shield-alt"></i>
-                        </div>
-                        <h4>Safety & Piracy Protection</h4>
-                        <p>Comprehensive safety equipment and advanced piracy protection supplies</p>
-                        <div class="service-arrow">
-                            <i class="fas fa-arrow-right"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="250">
-                    <div class="service-card-maritime">
-                        <div class="service-icon">
-                            <i class="fas fa-user-shield"></i>
-                        </div>
-                        <h4>Maritime Security Systems</h4>
-                        <p>Advanced anti-piracy equipment and security solutions for high-risk waters</p>
-                        <div class="service-arrow">
-                            <i class="fas fa-arrow-right"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-                    <div class="service-card-maritime">
-                        <div class="service-icon">
-                            <i class="fas fa-cogs"></i>
-                        </div>
+                        <div class="service-icon"><i class="fas fa-cog"></i></div>
                         <h4>Ship Spares</h4>
-                        <p>Wide range of spare parts and connectivity solutions for vessels</p>
-                        <div class="service-arrow">
-                            <i class="fas fa-arrow-right"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
-                    <div class="service-card-maritime">
-                        <div class="service-icon">
-                            <i class="fas fa-wrench"></i>
-                        </div>
-                        <h4>Onboard Repairing</h4>
-                        <p>Expert technical support and repair services at your location</p>
-                        <div class="service-arrow">
-                            <i class="fas fa-arrow-right"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
-                    <div class="service-card-maritime">
-                        <div class="service-icon">
-                            <i class="fas fa-oil-can"></i>
-                        </div>
-                        <h4>Lube Oil Supply</h4>
-                        <p>Quality lubricants and oils for optimal vessel performance</p>
-                        <div class="service-arrow">
-                            <i class="fas fa-arrow-right"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
-                    <div class="service-card-maritime">
-                        <div class="service-icon">
-                            <i class="fas fa-anchor"></i>
-                        </div>
-                        <h4>Deck & Engine Stores</h4>
-                        <p>Complete range of deck and engine room supplies</p>
-                        <div class="service-arrow">
-                            <i class="fas fa-arrow-right"></i>
-                        </div>
+                        <p>Comprehensive range of high-quality engine, deck, and electrical spare parts to keep your vessel performing at its best.</p>
+                        <a href="services.html" class="btn btn-link text-primary p-0 mt-3 fw-bold">Learn More <i class="fas fa-chevron-right ms-2"></i></a>
                     </div>
                 </div>
             </div>
-            <div class="text-center mt-5" data-aos="fade-up" data-aos-delay="700">
-                <a href="services.html" class="btn btn-maritime btn-lg">
-                    <i class="fas fa-list"></i>
-                    View All Services
-                </a>
+            <div class="text-center mt-5" data-aos="fade-up">
+                <a href="services.html" class="btn btn-outline-maritime">Explore All Services</a>
             </div>
         </div>
     </section>
 
     <!-- Stats Section -->
-    <section class="stats-maritime py-5">
-        <div class="container">
+    <section class="stats-section py-5" style="background: var(--clr-bg-light);">
+        <div class="container py-5">
             <div class="row g-4">
-                <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+                <div class="col-lg-3 col-md-6" data-aos="fade-up">
                     <div class="stat-card-maritime">
-                        <div class="stat-icon">
-                            <i class="fas fa-clock"></i>
-                        </div>
-                        <h3 class="stat-number" data-count="24">0</h3>
-                        <p>Hours Service</p>
-                        <div class="stat-bg"></div>
+                        <div class="stat-number" data-count="24">0</div>
+                        <div class="stat-label">Hours Service</div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
                     <div class="stat-card-maritime">
-                        <div class="stat-icon">
-                            <i class="fas fa-ship"></i>
-                        </div>
-                        <h3 class="stat-number" data-count="40">0</h3>
-                        <p>Vessels Served</p>
-                        <div class="stat-bg"></div>
+                        <div class="stat-number" data-count="40">0</div>
+                        <div class="stat-label">Vessels Served</div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
                     <div class="stat-card-maritime">
-                        <div class="stat-icon">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </div>
-                        <h3 class="stat-number" data-count="10">0</h3>
-                        <p>Major Ports</p>
-                        <div class="stat-bg"></div>
+                        <div class="stat-number" data-count="10">0</div>
+                        <div class="stat-label">Major Ports</div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="400">
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
                     <div class="stat-card-maritime">
-                        <div class="stat-icon">
-                            <i class="fas fa-thumbs-up"></i>
-                        </div>
-                        <h3 class="stat-number" data-count="99">0</h3>
-                        <p>Satisfaction Rate</p>
-                        <div class="stat-bg"></div>
+                        <div class="stat-number" data-count="99">0</div>
+                        <div class="stat-label">Satisfaction Rate</div>
                     </div>
                 </div>
             </div>
@@ -385,18 +186,14 @@
     </section>
 
     <!-- CTA Section -->
-    <section class="cta-maritime py-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 text-center" data-aos="fade-up">
-                    <div class="cta-content">
-                        <h2>Ready to Partner With Us?</h2>
-                        <p>Contact us today for all your maritime supply needs</p>
-                        <a href="contact.html" class="btn btn-maritime btn-lg">
-                            <i class="fas fa-rocket"></i>
-                            Get Started Now
-                        </a>
-                    </div>
+    <section class="cta-section py-5">
+        <div class="container py-5">
+            <div class="cta-box rounded-5 p-5 text-center text-white" style="background: linear-gradient(135deg, var(--clr-primary), var(--clr-secondary)); box-shadow: var(--shadow-premium);">
+                <h2 class="mb-3 text-white">Ready to Partner With Us?</h2>
+                <p class="lead mb-4 opacity-75">Contact us today for all your maritime supply needs. We are ready to serve you at any major Indian port with 24/7 reliability.</p>
+                <div class="d-flex justify-content-center gap-3">
+                    <a href="get-quote.html" class="btn btn-light btn-lg px-5 py-3 fw-bold text-primary">Get Started Now</a>
+                    <a href="contact.html" class="btn btn-outline-light btn-lg px-5 py-3 fw-bold">Contact Sales</a>
                 </div>
             </div>
         </div>
@@ -406,66 +203,55 @@
     <footer class="footer-maritime">
         <div class="container">
             <div class="row g-4">
-                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="col-lg-4" data-aos="fade-up">
                     <div class="footer-brand">
-                        <h3>YMR ShipChandlers</h3>
-                        <p>Your trusted partner in maritime supplies, delivering excellence across all major Indian
-                            ports.</p>
-                        <div class="social-links">
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        <h4 class="mb-3">YMR <span>ShipChandlers</span></h4>
+                        <p class="text-white opacity-50 pe-lg-5">Your trusted partner in maritime supplies, delivering excellence across all major Indian ports with quality assurance and 24/7 support.</p>
+                        <div class="footer-social">
+                            <a href="#" class="social-circle"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-circle"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-circle"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" class="social-circle"><i class="fab fa-instagram"></i></a>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-2 col-md-6" data-aos="fade-up" data-aos-delay="200">
-                    <div class="footer-links">
-                        <h5>Quick Links</h5>
-                        <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="about.html">About Us</a></li>
-                            <li><a href="services.html">Services</a></li>
-                            <li><a href="gallery.html">Gallery</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                        </ul>
-                    </div>
+                <div class="col-lg-2 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <h5 class="footer-section-title">Quick Links</h5>
+                    <ul class="footer-nav-list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
                 </div>
-                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
-                    <div class="footer-links">
-                        <h5>Services</h5>
-                        <ul>
-                            <li><a href="services.html">Provision Stores</a></li>
-                            <li><a href="services.html">Safety Equipment</a></li>
-                            <li><a href="services.html">Ship Spares</a></li>
-                            <li><a href="services.html">Onboard Repairs</a></li>
-                        </ul>
-                    </div>
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <h5 class="footer-section-title">Our Services</h5>
+                    <ul class="footer-nav-list">
+                        <li><a href="services.html">Provision Stores</a></li>
+                        <li><a href="services.html">Safety & Piracy Protection</a></li>
+                        <li><a href="services.html">Ship Spares</a></li>
+                        <li><a href="services.html">Onboard Repairs</a></li>
+                    </ul>
                 </div>
-                <div class="col-lg-3" data-aos="fade-up" data-aos-delay="400">
-                    <div class="footer-contact">
-                        <h5>Contact Info</h5>
-                        <div class="contact-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>Gautam Nagar 5th Lane,<br>Brahmapur, Odisha 761001</span>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-envelope"></i>
-                            <span>ymrshipchandlers@gmail.com</span>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-phone"></i>
-                            <span>7788956692 / 8338850999</span>
-                        </div>
+                <div class="col-lg-3" data-aos="fade-up" data-aos-delay="300">
+                    <h5 class="footer-section-title">Contact Info</h5>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Gautam Nagar 5th Lane,<br>Brahmapur, Odisha 761001</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>ymrshipchandlers@gmail.com</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <span>+91 7788956692</span>
                     </div>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <div class="row">
-                    <div class="col-12 text-center">
-                        <p>&copy; 2024 YMR ShipChandlers. All rights reserved.</p>
-                    </div>
-                </div>
+            <div class="footer-bottom-bar">
+                <p>&copy; 2024 YMR ShipChandlers. All rights reserved. | Privacy Policy | Terms of Service</p>
             </div>
         </div>
     </footer>

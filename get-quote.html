@@ -4,297 +4,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Get a Quote - YMR ShipChandlers</title>
+    <meta name="description" content="Request a maritime supply quote from YMR ShipChandlers. Fast and reliable service.">
+    <title>Get a Quote | YMR ShipChandlers</title>
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <!-- AOS Animation Library -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <!-- Custom Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&family=Exo+2:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
-
     <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
-    <style>
-        .quote-container {
-            padding: 80px 0;
-            background: rgba(255, 255, 255, 0.05);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            margin-top: -100px;
-            position: relative;
-            z-index: 10;
-        }
-
-        .call-card {
-            background: var(--primary-main);
-            color: white;
-            padding: 40px;
-            border-left: 5px solid var(--accent-red);
-            height: 100%;
-            transition: var(--transition-smooth);
-        }
-
-        .call-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 30px rgba(211, 47, 47, 0.2);
-        }
-
-        .call-btn {
-            display: flex;
-            align-items: center;
-            gap: 15px;
-            background: white;
-            color: var(--primary-main);
-            padding: 15px 25px;
-            font-weight: 700;
-            font-family: 'Orbitron', sans-serif;
-            margin-bottom: 20px;
-            transition: var(--transition-smooth);
-            border: 2px solid transparent;
-        }
-
-        .call-btn:hover {
-            background: var(--accent-red);
-            color: white;
-            transform: scale(1.05);
-        }
-
-        .call-btn i {
-            font-size: 1.5rem;
-            color: var(--accent-red);
-        }
-
-        .call-btn:hover i {
-            color: white;
-        }
-
-        .quote-form-card {
-            background: white;
-            padding: 40px;
-            box-shadow: var(--shadow-lg);
-            border-top: 5px solid var(--accent-red);
-        }
-
-        .contact-method {
-            display: flex;
-            align-items: flex-start;
-            gap: 20px;
-            margin-bottom: 30px;
-        }
-
-        .method-icon {
-            width: 50px;
-            height: 50px;
-            background: rgba(211, 47, 47, 0.1);
-            color: var(--accent-red);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.2rem;
-            flex-shrink: 0;
-        }
-
-        .method-info h5 {
-            font-size: 1rem;
-            margin-bottom: 5px;
-            letter-spacing: 1px;
-        }
-
-        .method-info p {
-            color: var(--text-muted);
-            margin-bottom: 0;
-            font-size: 0.9rem;
-        }
-    </style>
 </head>
 
 <body>
-    <!-- Animated Background -->
-    <div class="maritime-bg">
-        <div class="waves-container">
-            <div class="wave wave1"></div>
-            <div class="wave wave2"></div>
-            <div class="wave wave3"></div>
-        </div>
-        <div class="floating-particles">
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-        </div>
-    </div>
+    <!-- Custom Cursor -->
+    <div class="custom-cursor"></div>
+    <div class="custom-cursor-outline"></div>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg fixed-top maritime-nav" data-aos="fade-down">
+    <nav class="navbar navbar-expand-lg fixed-top maritime-nav">
         <div class="container">
-            <a href="index.html" class="navbar-brand maritime-logo">
-                <img src="image/ymr-logo.png" alt="YMR ShipChandlers Logo" class="logo-image">
-                <span class="logo-text">YMR ShipChandlers</span>
+            <a href="index.html" class="navbar-brand">
+                <img src="image/ymr-logo.png" alt="YMR Logo" class="logo-image">
+                <span class="logo-text">YMR <span>ShipChandlers</span></span>
             </a>
-
-            <button class="navbar-toggler maritime-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarNav">
-                <span class="toggler-line"></span>
-                <span class="toggler-line"></span>
-                <span class="toggler-line"></span>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
             </button>
 
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html"><i
-                                class="fas fa-home"></i><span>Home</span></a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html"><i
-                                class="fas fa-info-circle"></i><span>About Us</span></a></li>
-                    <li class="nav-item"><a class="nav-link" href="services.html"><i
-                                class="fas fa-cogs"></i><span>Services</span></a></li>
-                    <li class="nav-item"><a class="nav-link" href="gallery.html"><i
-                                class="fas fa-images"></i><span>Gallery</span></a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html"><i
-                                class="fas fa-envelope"></i><span>Contact</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                 </ul>
-                <a href="get-quote.html" class="btn btn-maritime ms-3 active">
-                    <i class="fas fa-phone"></i>
-                    Get Quote
-                </a>
+                <a href="get-quote.html" class="btn btn-maritime ms-lg-4">Get a Quote <i class="fas fa-paper-plane"></i></a>
             </div>
         </div>
     </nav>
 
     <!-- Page Header -->
-    <section class="hero-maritime" style="min-height: 50vh; padding-top: 180px;">
-        <div class="hero-overlay"></div>
+    <section class="hero-maritime" style="min-height: 40vh;">
         <div class="container">
-            <div class="row align-items-center justify-content-center text-center">
+            <div class="row text-center justify-content-center">
                 <div class="col-lg-8" data-aos="fade-up">
-                    <div class="hero-badge" data-aos="zoom-in" data-aos-delay="200">
-                        <i class="fas fa-file-invoice-dollar"></i>
-                        <span>Fast & Reliable Estimates</span>
-                    </div>
-                    <h1 class="hero-title" data-aos="fade-up" data-aos-delay="400">
-                        Request a <span class="text-gradient">Custom Quote</span>
-                    </h1>
-                    <p class="hero-subtitle mx-auto" data-aos="fade-up" data-aos-delay="600">
-                        Get in touch with our maritime experts for tailored supply solutions and competitive pricing.
-                    </p>
+                    <h1 class="hero-title">Request a <span>Quote</span></h1>
+                    <p class="hero-subtitle mx-auto">Fill out the form below and our team will get back to you within 24 hours with a detailed proposal for your vessel's requirements.</p>
                 </div>
             </div>
         </div>
+        <!-- Unique Wave Divider -->
+        <div class="wave-divider">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+            </svg>
+        </div>
     </section>
 
-    <!-- Main Content -->
-    <section class="quote-content pb-5">
-        <div class="container">
-            <div class="row g-5">
-                <!-- Left Side: Instant Call -->
-                <div class="col-lg-5" data-aos="fade-right">
-                    <div class="call-card">
-                        <h2 class="section-title text-white mb-4">Call Us Directly</h2>
-                        <p class="mb-5 opacity-75">For urgent requirements or immediate assistance, reach our 24/7
-                            helpline. Click a number to call now.</p>
-
-                        <a href="tel:7788956692" class="call-btn">
-                            <i class="fas fa-phone-alt"></i>
-                            <span>+91 7788956692</span>
-                        </a>
-
-                        <a href="tel:8338850999" class="call-btn">
-                            <i class="fas fa-phone-alt"></i>
-                            <span>+91 8338850999</span>
-                        </a>
-
-                        <hr class="my-5 opacity-25">
-
-                        <div class="contact-method">
-                            <div class="method-icon"><i class="fas fa-envelope"></i></div>
-                            <div class="method-info">
-                                <h5 class="text-white">Email Us</h5>
-                                <p class="text-white-50">ymrshipchandlers@gmail.com</p>
-                            </div>
-                        </div>
-
-                        <div class="contact-method">
-                            <div class="method-icon"><i class="fas fa-location-dot"></i></div>
-                            <div class="method-info">
-                                <h5 class="text-white">Visit Office</h5>
-                                <p class="text-white-50">Gautam Nagar 5th Lane,<br>Brahmapur, Odisha 761001</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Right Side: Quote Form -->
-                <div class="col-lg-7" data-aos="fade-left">
-                    <div class="quote-form-card">
-                        <h3 class="mb-4">Send a Quote Request</h3>
-                        <form action="https://formsubmit.co/ymrshipchandlers@gmail.com" method="POST">
-                            <!-- FormSubmit Configuration -->
-                            <input type="hidden" name="_subject" value="New Quote Request - YMR ShipChandlers">
-                            <input type="hidden" name="_template" value="table">
-                            <input type="hidden" name="_captcha" value="false">
-
-                            <div class="row g-3">
+    <!-- Quote Form Content -->
+    <section class="quote-form-section py-5" style="background: var(--clr-bg-light);">
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="quote-card p-5 rounded-4 bg-white shadow-lg" data-aos="fade-up">
+                        <form action="#" method="POST">
+                            <div class="row g-4">
                                 <div class="col-md-6">
-                                    <div class="form-floating mb-3">
-                                        <input type="text" class="form-control" id="name" name="name"
-                                            placeholder="Full Name" required>
-                                        <label for="name">Full Name *</label>
-                                    </div>
+                                    <label class="form-label fw-bold">Company Name</label>
+                                    <input type="text" class="form-control p-3 bg-light border-0" required>
                                 </div>
                                 <div class="col-md-6">
-                                    <div class="form-floating mb-3">
-                                        <input type="email" class="form-control" id="email" name="email"
-                                            placeholder="Email Address" required>
-                                        <label for="email">Email Address *</label>
-                                    </div>
+                                    <label class="form-label fw-bold">Vessel Name</label>
+                                    <input type="text" class="form-control p-3 bg-light border-0" required>
                                 </div>
                                 <div class="col-md-6">
-                                    <div class="form-floating mb-3">
-                                        <input type="tel" class="form-control" id="phone" name="phone"
-                                            placeholder="Phone Number" required>
-                                        <label for="phone">Phone Number *</label>
-                                    </div>
+                                    <label class="form-label fw-bold">Contact Person</label>
+                                    <input type="text" class="form-control p-3 bg-light border-0" required>
                                 </div>
                                 <div class="col-md-6">
-                                    <div class="form-floating mb-3">
-                                        <input type="text" class="form-control" id="vessel" name="vessel"
-                                            placeholder="Vessel Name">
-                                        <label for="vessel">Vessel Name</label>
-                                    </div>
+                                    <label class="form-label fw-bold">Email Address</label>
+                                    <input type="email" class="form-control p-3 bg-light border-0" required>
                                 </div>
-                                <div class="col-12">
-                                    <div class="form-floating mb-3">
-                                        <select class="form-select" id="service" name="service" required>
-                                            <option value="" selected disabled>Select Service Needed</option>
-                                            <option value="Provision Stores">Provision Stores</option>
-                                            <option value="Safety Equipment">Safety Equipment</option>
-                                            <option value="Ship Spares">Ship Spares</option>
-                                            <option value="Technical Maintenance">Technical Maintenance</option>
-                                            <option value="Deck & Engine Stores">Deck & Engine Stores</option>
-                                            <option value="Other">Other Services</option>
-                                        </select>
-                                        <label for="service">Service Category *</label>
-                                    </div>
+                                <div class="col-md-6">
+                                    <label class="form-label fw-bold">Phone Number</label>
+                                    <input type="tel" class="form-control p-3 bg-light border-0">
                                 </div>
-                                <div class="col-12">
-                                    <div class="form-floating mb-4">
-                                        <textarea class="form-control" placeholder="Describe your requirements"
-                                            id="message" name="message" style="height: 150px" required></textarea>
-                                        <label for="message">Detailed Requirements *</label>
-                                    </div>
+                                <div class="col-md-6">
+                                    <label class="form-label fw-bold">Port of Call</label>
+                                    <select class="form-select p-3 bg-light border-0">
+                                        <option selected>Select Port</option>
+                                        <option value="Mumbai">Mumbai Port</option>
+                                        <option value="Chennai">Chennai Port</option>
+                                        <option value="Kolkata">Kolkata Port</option>
+                                        <option value="Kochi">Kochi Port</option>
+                                        <option value="Paradip">Paradip Port</option>
+                                        <option value="Visakhapatnam">Visakhapatnam Port</option>
+                                    </select>
                                 </div>
-                                <div class="col-12">
-                                    <button class="btn btn-maritime w-100 py-3" type="submit">
-                                        Submit Quote Request
-                                        <i class="fas fa-paper-plane ms-2"></i>
-                                    </button>
+                                <div class="col-md-12">
+                                    <label class="form-label fw-bold">Requirement Details</label>
+                                    <textarea class="form-control p-3 bg-light border-0" rows="6" placeholder="Please list your required provisions, spares, or services..."></textarea>
+                                </div>
+                                <div class="col-12 text-center mt-5">
+                                    <button type="submit" class="btn btn-maritime px-5 py-3">Submit Quote Request <i class="fas fa-paper-plane ms-2"></i></button>
                                 </div>
                             </div>
                         </form>
@@ -306,8 +121,58 @@
 
     <!-- Footer -->
     <footer class="footer-maritime">
-        <div class="container text-center">
-            <p>&copy; 2024 YMR ShipChandlers. All rights reserved.</p>
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4" data-aos="fade-up">
+                    <div class="footer-brand">
+                        <h4 class="mb-3">YMR <span>ShipChandlers</span></h4>
+                        <p class="text-white opacity-50 pe-lg-5">Your trusted partner in maritime supplies, delivering excellence across all major Indian ports with quality assurance and 24/7 support.</p>
+                        <div class="footer-social">
+                            <a href="#" class="social-circle"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-circle"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-circle"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" class="social-circle"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <h5 class="footer-section-title">Quick Links</h5>
+                    <ul class="footer-nav-list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <h5 class="footer-section-title">Our Services</h5>
+                    <ul class="footer-nav-list">
+                        <li><a href="services.html">Provision Stores</a></li>
+                        <li><a href="services.html">Safety & Piracy Protection</a></li>
+                        <li><a href="services.html">Ship Spares</a></li>
+                        <li><a href="services.html">Onboard Repairs</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3" data-aos="fade-up" data-aos-delay="300">
+                    <h5 class="footer-section-title">Contact Info</h5>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Gautam Nagar 5th Lane,<br>Brahmapur, Odisha 761001</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>ymrshipchandlers@gmail.com</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <span>+91 7788956692</span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom-bar">
+                <p>&copy; 2024 YMR ShipChandlers. All rights reserved. | Privacy Policy | Terms of Service</p>
+            </div>
         </div>
     </footer>
 
@@ -315,12 +180,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <!-- AOS Animation JS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init({
-            duration: 1000,
-            once: true
-        });
-    </script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
 </body>
 
 </html>

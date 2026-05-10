@@ -4,413 +4,285 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services - YMR ShipChandlers</title>
+    <meta name="description" content="Explore our wide range of maritime supplies and services at YMR ShipChandlers.">
+    <title>Our Services | YMR ShipChandlers</title>
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <!-- AOS Animation Library -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <!-- Custom Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&family=Exo+2:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
-
     <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <!-- Animated Background -->
-    <div class="maritime-bg">
-        <div class="waves-container">
-            <div class="wave wave1"></div>
-            <div class="wave wave2"></div>
-            <div class="wave wave3"></div>
-        </div>
-        <div class="floating-particles">
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-        </div>
-    </div>
+    <!-- Custom Cursor -->
+    <div class="custom-cursor"></div>
+    <div class="custom-cursor-outline"></div>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg fixed-top maritime-nav" data-aos="fade-down">
+    <nav class="navbar navbar-expand-lg fixed-top maritime-nav">
         <div class="container">
-            <a href="index.html" class="navbar-brand maritime-logo">
-                <img src="image/ymr-logo.png" alt="YMR ShipChandlers Logo" class="logo-image">
-                <span class="logo-text">YMR ShipChandlers</span>
-                <div class="logo-waves"></div>
+            <a href="index.html" class="navbar-brand">
+                <img src="image/ymr-logo.png" alt="YMR Logo" class="logo-image">
+                <span class="logo-text">YMR <span>ShipChandlers</span></span>
             </a>
-
-            <button class="navbar-toggler maritime-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarNav">
-                <span class="toggler-line"></span>
-                <span class="toggler-line"></span>
-                <span class="toggler-line"></span>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
             </button>
 
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">
-                            <i class="fas fa-home"></i>
-                            <span>Home</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">
-                            <i class="fas fa-info-circle"></i>
-                            <span>About Us</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="services.html">
-                            <i class="fas fa-cogs"></i>
-                            <span>Services</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="gallery.html">
-                            <i class="fas fa-images"></i>
-                            <span>Gallery</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">
-                            <i class="fas fa-envelope"></i>
-                            <span>Contact</span>
-                        </a>
-                    </li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                 </ul>
-                <a href="get-quote.html" class="btn btn-maritime ms-3">
-                    <i class="fas fa-phone"></i>
-                    Get Quote
-                </a>
+                <a href="get-quote.html" class="btn btn-maritime ms-lg-4">Get a Quote <i class="fas fa-paper-plane"></i></a>
             </div>
         </div>
     </nav>
 
     <!-- Page Header -->
-    <section class="hero-maritime" style="min-height: 60vh;">
-        <div class="hero-overlay"></div>
+    <section class="hero-maritime" style="min-height: 50vh;">
         <div class="container">
-            <div class="row align-items-center justify-content-center text-center">
+            <div class="row text-center justify-content-center">
                 <div class="col-lg-8" data-aos="fade-up">
-                    <div class="hero-badge" data-aos="zoom-in" data-aos-delay="200">
-                        <i class="fas fa-cogs"></i>
-                        <span>Our Services</span>
+                    <div class="hero-badge">Our Solutions</div>
+                    <h1 class="hero-title">Maritime <span>Services</span></h1>
+                    <p class="hero-subtitle mx-auto">Providing a comprehensive suite of maritime solutions, from premium provision stores to advanced safety systems and technical repairs.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Unique Wave Divider -->
+        <div class="wave-divider">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Service Breakdown -->
+    <section class="service-breakdown">
+        <div class="container">
+            <!-- 01 Provision Stores -->
+            <div class="service-row">
+                <div class="col-lg-6 service-text-content" data-aos="fade-right">
+                    <div class="service-number">01</div>
+                    <h2 class="service-title-top">Provision Stores</h2>
+                    <p class="service-desc">Complete supply of food, beverages, and essential provisions for crew welfare and comfort during voyages. Our provision stores include fresh produce, frozen items, dry goods, and specialty items tailored to your crew's preferences and dietary requirements.</p>
+                    <ul class="service-features-list">
+                        <li><i class="fas fa-check"></i> Fresh fruits and vegetables</li>
+                        <li><i class="fas fa-check"></i> Frozen meat and seafood</li>
+                        <li><i class="fas fa-check"></i> Dry goods and canned items</li>
+                        <li><i class="fas fa-check"></i> Beverages and refreshments</li>
+                        <li><i class="fas fa-check"></i> Custom dietary requirements</li>
+                    </ul>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="service-image-container">
+                        <img src="image/Provision stores2.jpeg" alt="Provision Stores" class="service-image-main">
+                        <div class="service-image-accent"><i class="fas fa-box"></i></div>
                     </div>
-                    <h1 class="hero-title" data-aos="fade-up" data-aos-delay="400">
-                        Comprehensive
-                        <span class="text-gradient">Maritime Solutions</span>
-                    </h1>
-                    <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="600">
-                        Complete range of maritime supplies and services for your vessel requirements
-                    </p>
+                </div>
+            </div>
+
+            <!-- 02 Safety Stores -->
+            <div class="service-row reverse">
+                <div class="col-lg-6 service-text-content" data-aos="fade-left">
+                    <div class="service-number">02</div>
+                    <h2 class="service-title-top">Safety Stores</h2>
+                    <p class="service-desc">Comprehensive safety equipment and piracy protection supplies to ensure the security and safety of your vessel and crew. We provide certified safety gear that meets international maritime standards.</p>
+                    <ul class="service-features-list">
+                        <li><i class="fas fa-check"></i> Life-saving equipment</li>
+                        <li><i class="fas fa-check"></i> Fire fighting equipment</li>
+                        <li><i class="fas fa-check"></i> Piracy protection gear</li>
+                        <li><i class="fas fa-check"></i> Personal protective equipment</li>
+                        <li><i class="fas fa-check"></i> Emergency response supplies</li>
+                    </ul>
+                </div>
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="service-image-container">
+                        <img src="image/Safety stores.jpeg" alt="Safety Stores" class="service-image-main">
+                        <div class="service-image-accent"><i class="fas fa-shield-alt"></i></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 02A Piracy Protection Equipment -->
+            <div class="service-row">
+                <div class="col-lg-6 service-text-content" data-aos="fade-right">
+                    <div class="service-number">02A</div>
+                    <h2 class="service-title-top">Piracy Protection Equipment</h2>
+                    <p class="service-desc">Advanced maritime security solutions and anti-piracy equipment to protect your vessel and crew in high-risk waters. We provide state-of-the-art security equipment designed specifically for maritime environments, ensuring maximum protection against piracy threats.</p>
+                    <ul class="service-features-list">
+                        <li><i class="fas fa-check"></i> Anti-piracy barriers and razor wire</li>
+                        <li><i class="fas fa-check"></i> Security lighting systems</li>
+                        <li><i class="fas fa-check"></i> Communication and alarm systems</li>
+                        <li><i class="fas fa-check"></i> Safe room equipment</li>
+                        <li><i class="fas fa-check"></i> Water cannons and deterrent systems</li>
+                        <li><i class="fas fa-check"></i> Surveillance and monitoring equipment</li>
+                    </ul>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="service-image-container">
+                        <img src="image/Piracy equipment’s for ships3.jpeg" alt="Piracy Protection" class="service-image-main">
+                        <div class="service-image-accent"><i class="fas fa-lock"></i></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 03 Shore and Offshore Services -->
+            <div class="service-row reverse">
+                <div class="col-lg-6 service-text-content" data-aos="fade-left">
+                    <div class="service-number">03</div>
+                    <h2 class="service-title-top">Shore and Offshore Services</h2>
+                    <p class="service-desc">Complete support services for both shore-based and offshore operations. Our team is ready to assist with logistics, coordination, and on-site support to keep your operations running smoothly.</p>
+                    <ul class="service-features-list">
+                        <li><i class="fas fa-check"></i> Port coordination services</li>
+                        <li><i class="fas fa-check"></i> Logistics management</li>
+                        <li><i class="fas fa-check"></i> Crew transportation</li>
+                        <li><i class="fas fa-check"></i> Documentation assistance</li>
+                        <li><i class="fas fa-check"></i> 24/7 emergency support</li>
+                    </ul>
+                </div>
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="service-image-container">
+                        <img src="image/Shore and offshore services1.jpg" alt="Shore and Offshore" class="service-image-main">
+                        <div class="service-image-accent"><i class="fas fa-anchor"></i></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 04 Onboard Repairing -->
+            <div class="service-row">
+                <div class="col-lg-6 service-text-content" data-aos="fade-right">
+                    <div class="service-number">04</div>
+                    <h2 class="service-title-top">Onboard Repairing</h2>
+                    <p class="service-desc">Expert technical support and repair services delivered directly to your vessel. Our skilled technicians provide prompt and professional repairs to minimize downtime and keep your vessel operational.</p>
+                    <ul class="service-features-list">
+                        <li><i class="fas fa-check"></i> Emergency repairs</li>
+                        <li><i class="fas fa-check"></i> Preventive maintenance</li>
+                        <li><i class="fas fa-check"></i> Technical troubleshooting</li>
+                        <li><i class="fas fa-check"></i> Equipment installation</li>
+                        <li><i class="fas fa-check"></i> Certified technicians</li>
+                    </ul>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="service-image-container">
+                        <img src="image/On board repairing.jpeg" alt="Onboard Repairing" class="service-image-main">
+                        <div class="service-image-accent"><i class="fas fa-tools"></i></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 05 Ship Spares Connectivity -->
+            <div class="service-row reverse">
+                <div class="col-lg-6 service-text-content" data-aos="fade-left">
+                    <div class="service-number">05</div>
+                    <h2 class="service-title-top">Ship Spares Connectivity</h2>
+                    <p class="service-desc">Wide range of spare parts and connectivity solutions for all types of vessels. We maintain extensive inventory and global supplier networks to source any part you need quickly.</p>
+                    <ul class="service-features-list">
+                        <li><i class="fas fa-check"></i> Engine spare parts</li>
+                        <li><i class="fas fa-check"></i> Deck equipment spares</li>
+                        <li><i class="fas fa-check"></i> Electrical components</li>
+                        <li><i class="fas fa-check"></i> Navigation equipment</li>
+                        <li><i class="fas fa-check"></i> Fast sourcing and delivery</li>
+                    </ul>
+                </div>
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="service-image-container">
+                        <img src="image/ship spares connectivity1.jpeg" alt="Ship Spares" class="service-image-main">
+                        <div class="service-image-accent"><i class="fas fa-cogs"></i></div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Services Detailed -->
-    <section class="about-preview-maritime py-5">
+    <!-- More Solutions Section -->
+    <section class="more-solutions-section">
         <div class="container">
-            <!-- Service 1: Provision Stores -->
-            <div class="row align-items-center mb-5" data-aos="fade-up">
-                <div class="col-lg-6">
-                    <div class="service-content">
-                        <div class="service-number">01</div>
-                        <h2>Provision Stores</h2>
-                        <p class="lead">Complete supply of food, beverages, and essential provisions for crew welfare
-                            and comfort during voyages.</p>
-                        <p>Our provision stores include fresh produce, frozen items, dry goods, and specialty items
-                            tailored to your crew's preferences and dietary requirements.</p>
-                        <ul class="service-features">
-                            <li><i class="fas fa-check"></i> Fresh fruits and vegetables</li>
-                            <li><i class="fas fa-check"></i> Frozen meat and seafood</li>
-                            <li><i class="fas fa-check"></i> Dry goods and canned items</li>
-                            <li><i class="fas fa-check"></i> Beverages and refreshments</li>
-                            <li><i class="fas fa-check"></i> Custom dietary requirements</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="service-image-container">
-                        <img src="image/Provision stores1.jpeg" alt="Provision Stores" class="service-image"
-                            loading="lazy">
-                        <div class="image-overlay">
-                            <div class="service-icon-large">
-                                <i class="fas fa-box"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Service 2: Safety Stores -->
-            <div class="row align-items-center mb-5" data-aos="fade-up">
-                <div class="col-lg-6 order-lg-2">
-                    <div class="service-content">
-                        <div class="service-number">02</div>
-                        <h2>Safety Stores</h2>
-                        <p class="lead">Comprehensive safety equipment and piracy protection supplies to ensure the
-                            security and safety of your vessel and crew.</p>
-                        <p>We provide certified safety gear that meets international maritime standards.</p>
-                        <ul class="service-features">
-                            <li><i class="fas fa-check"></i> Life-saving equipment</li>
-                            <li><i class="fas fa-check"></i> Fire fighting equipment</li>
-                            <li><i class="fas fa-check"></i> Piracy protection gear</li>
-                            <li><i class="fas fa-check"></i> Personal protective equipment</li>
-                            <li><i class="fas fa-check"></i> Emergency response supplies</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-6 order-lg-1">
-                    <div class="service-image-container">
-                        <img src="image/Safety stores.jpeg" alt="Safety Stores" class="service-image" loading="lazy">
-                        <div class="image-overlay">
-                            <div class="service-icon-large">
-                                <i class="fas fa-shield-alt"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Service 2B: Piracy Protection Equipment -->
-            <div class="row align-items-center mb-5" data-aos="fade-up">
-                <div class="col-lg-6">
-                    <div class="service-content">
-                        <div class="service-number">02B</div>
-                        <h2>Piracy Protection Equipment</h2>
-                        <p class="lead">Advanced maritime security solutions and anti-piracy equipment to protect your
-                            vessel and crew in high-risk waters.</p>
-                        <p>We provide state-of-the-art security equipment designed specifically for maritime
-                            environments, ensuring maximum protection against piracy threats.</p>
-                        <ul class="service-features">
-                            <li><i class="fas fa-check"></i> Anti-piracy barriers and razor wire</li>
-                            <li><i class="fas fa-check"></i> Security lighting systems</li>
-                            <li><i class="fas fa-check"></i> Communication and alarm systems</li>
-                            <li><i class="fas fa-check"></i> Safe room equipment</li>
-                            <li><i class="fas fa-check"></i> Water cannons and deterrent systems</li>
-                            <li><i class="fas fa-check"></i> Surveillance and monitoring equipment</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="service-image-container">
-                        <img src="https://static.wixstatic.com/media/18b4e1_392049f730754deeb7283ac5d9a3793b~mv2.jpg/v1/fill/w_625,h_416,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/18b4e1_392049f730754deeb7283ac5d9a3793b~mv2.jpg"
-                            alt="Piracy Protection Equipment" class="service-image" loading="lazy">
-                        <div class="image-overlay">
-                            <div class="service-icon-large">
-                                <i class="fas fa-shield-alt"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Service 3: Shore and Offshore Services -->
-            <div class="row align-items-center mb-5" data-aos="fade-up">
-                <div class="col-lg-6">
-                    <div class="service-content">
-                        <div class="service-number">03</div>
-                        <h2>Shore and Offshore Services</h2>
-                        <p class="lead">Complete support services for both shore-based and offshore operations.</p>
-                        <p>Our team is ready to assist with logistics, coordination, and on-site support to keep your
-                            operations running smoothly.</p>
-                        <ul class="service-features">
-                            <li><i class="fas fa-check"></i> Port coordination services</li>
-                            <li><i class="fas fa-check"></i> Logistics management</li>
-                            <li><i class="fas fa-check"></i> Crew transportation</li>
-                            <li><i class="fas fa-check"></i> Documentation assistance</li>
-                            <li><i class="fas fa-check"></i> 24/7 emergency support</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="service-image-container">
-                        <img src="image/Shore and offshore services1.jpg" alt="Shore and Offshore Services"
-                            class="service-image" loading="lazy">
-                        <div class="image-overlay">
-                            <div class="service-icon-large">
-                                <i class="fas fa-anchor"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Service 4: Onboard Repairing -->
-            <div class="row align-items-center mb-5" data-aos="fade-up">
-                <div class="col-lg-6 order-lg-2">
-                    <div class="service-content">
-                        <div class="service-number">04</div>
-                        <h2>Onboard Repairing</h2>
-                        <p class="lead">Expert technical support and repair services delivered directly to your vessel.
-                        </p>
-                        <p>Our skilled technicians provide prompt and professional repairs to minimize downtime and keep
-                            your vessel operational.</p>
-                        <ul class="service-features">
-                            <li><i class="fas fa-check"></i> Emergency repairs</li>
-                            <li><i class="fas fa-check"></i> Preventive maintenance</li>
-                            <li><i class="fas fa-check"></i> Technical troubleshooting</li>
-                            <li><i class="fas fa-check"></i> Equipment installation</li>
-                            <li><i class="fas fa-check"></i> Certified technicians</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-6 order-lg-1">
-                    <div class="service-image-container">
-                        <img src="image/On board repairing.jpeg" alt="Onboard Repairing" class="service-image"
-                            loading="lazy">
-                        <div class="image-overlay">
-                            <div class="service-icon-large">
-                                <i class="fas fa-wrench"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Service 5: Ship Spares Connectivity -->
-            <div class="row align-items-center mb-5" data-aos="fade-up">
-                <div class="col-lg-6">
-                    <div class="service-content">
-                        <div class="service-number">05</div>
-                        <h2>Ship Spares Connectivity</h2>
-                        <p class="lead">Wide range of spare parts and connectivity solutions for all types of vessels.
-                        </p>
-                        <p>We maintain extensive inventory and global supplier networks to source any part you need
-                            quickly.</p>
-                        <ul class="service-features">
-                            <li><i class="fas fa-check"></i> Engine spare parts</li>
-                            <li><i class="fas fa-check"></i> Deck equipment spares</li>
-                            <li><i class="fas fa-check"></i> Electrical components</li>
-                            <li><i class="fas fa-check"></i> Navigation equipment</li>
-                            <li><i class="fas fa-check"></i> Fast sourcing and delivery</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="service-image-container">
-                        <img src="image/ship spares connectivity1.jpeg" alt="Ship Spares Connectivity"
-                            class="service-image" loading="lazy">
-                        <div class="image-overlay">
-                            <div class="service-icon-large">
-                                <i class="fas fa-cogs"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Additional Services in Grid -->
-            <div class="row g-4 mt-5">
-                <div class="col-12 text-center mb-4" data-aos="fade-up">
-                    <div class="section-badge">
-                        <i class="fas fa-tools"></i>
-                        <span>Additional Services</span>
-                    </div>
+            <div class="row text-center mb-5" data-aos="fade-up">
+                <div class="col-12">
+                    <span class="section-badge"><i class="fas fa-tools"></i> Additional Services</span>
                     <h2 class="section-title">More Maritime Solutions</h2>
-                    <div class="section-divider"></div>
-                </div>
-
-                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-                    <div class="service-card-compact">
-                        <div class="service-image-small">
-                            <img src="image/Lube oil supply.jpeg" alt="Lube Oil Supply" loading="lazy">
-                        </div>
-                        <div class="service-content-compact">
-                            <h4>Lube Oil Supply</h4>
-                            <p>Quality lubricants and oils for optimal vessel performance</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-                    <div class="service-card-compact">
-                        <div class="service-image-small">
-                            <img src="image/Deck stores.jpeg" alt="Deck Stores" loading="lazy">
-                        </div>
-                        <div class="service-content-compact">
-                            <h4>Deck Stores</h4>
-                            <p>Complete range of deck supplies and maintenance equipment</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-                    <div class="service-card-compact">
-                        <div class="service-image-small">
-                            <img src="image/Engine stores.jpeg" alt="Engine Stores" loading="lazy">
-                        </div>
-                        <div class="service-content-compact">
-                            <h4>Engine Stores</h4>
-                            <p>Comprehensive engine room supplies and equipment</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
-                    <div class="service-card-compact">
-                        <div class="service-image-small">
-                            <img src="image/Marine paint and chemicals.jpeg" alt="Marine Paints" loading="lazy">
-                        </div>
-                        <div class="service-content-compact">
-                            <h4>Marine Paints & Chemicals</h4>
-                            <p>High-quality marine paints and chemicals for vessel maintenance</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
-                    <div class="service-card-compact">
-                        <div class="service-image-small">
-                            <img src="image/Electrical stores.jpeg" alt="Electrical Stores" loading="lazy">
-                        </div>
-                        <div class="service-content-compact">
-                            <h4>Electrical Stores</h4>
-                            <p>Complete range of electrical supplies and equipment</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
-                    <div class="service-card-compact">
-                        <div class="service-image-small">
-                            <img src="https://www.oneocean.com/wp-content/uploads/2025/09/1440x960_security_officers_on_ship.jpg"
-                                alt="Advanced Piracy Protection" loading="lazy">
-                        </div>
-                        <div class="service-content-compact">
-                            <h4>Advanced Security Systems</h4>
-                            <p>Sophisticated anti-piracy and security equipment for vessel protection</p>
-                        </div>
-                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section class="cta-maritime py-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 text-center" data-aos="fade-up">
-                    <div class="cta-content">
-                        <h2>Need Maritime Supplies?</h2>
-                        <p>Contact us for a quote or to discuss your requirements</p>
-                        <a href="contact.html" class="btn btn-maritime btn-lg">
-                            <i class="fas fa-envelope"></i>
-                            Get in Touch
-                        </a>
+            <div class="row g-4">
+                <!-- Lube Oil Supply -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up">
+                    <div class="solution-card">
+                        <div class="solution-img-box">
+                            <img src="image/Lube oil supply.jpeg" alt="Lube Oil Supply">
+                        </div>
+                        <div class="solution-info">
+                            <h5>Lube Oil Supply</h5>
+                            <p>Quality lubricants and oils for optimal vessel performance.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Deck Stores -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="solution-card">
+                        <div class="solution-img-box">
+                            <img src="image/Deck stores.jpeg" alt="Deck Stores">
+                        </div>
+                        <div class="solution-info">
+                            <h5>Deck Stores</h5>
+                            <p>Complete range of deck supplies and maintenance equipment.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Engine Stores -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="solution-card">
+                        <div class="solution-img-box">
+                            <img src="image/Engine stores.jpeg" alt="Engine Stores">
+                        </div>
+                        <div class="solution-info">
+                            <h5>Engine Stores</h5>
+                            <p>Comprehensive engine room supplies and equipment.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Marine Paints -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up">
+                    <div class="solution-card">
+                        <div class="solution-img-box">
+                            <img src="image/Marine paint and chemicals.jpeg" alt="Marine Paints">
+                        </div>
+                        <div class="solution-info">
+                            <h5>Marine Paints & Chemicals</h5>
+                            <p>High-quality marine paints and chemicals for vessel maintenance.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Electrical Stores -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="solution-card">
+                        <div class="solution-img-box">
+                            <img src="image/Electrical stores.jpeg" alt="Electrical Stores">
+                        </div>
+                        <div class="solution-info">
+                            <h5>Electrical Stores</h5>
+                            <p>Complete range of electrical supplies and equipment.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Advanced Security Systems -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="solution-card">
+                        <div class="solution-img-box">
+                            <img src="image/Piracy equipment’s for ships2.jpeg" alt="Security Systems">
+                        </div>
+                        <div class="solution-info">
+                            <h5>Advanced Security Systems</h5>
+                            <p>Sophisticated anti-piracy and security equipment for vessel protection.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -421,66 +293,55 @@
     <footer class="footer-maritime">
         <div class="container">
             <div class="row g-4">
-                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="col-lg-4" data-aos="fade-up">
                     <div class="footer-brand">
-                        <h3>YMR ShipChandlers</h3>
-                        <p>Your trusted partner in maritime supplies, delivering excellence across all major Indian
-                            ports.</p>
-                        <div class="social-links">
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        <h4 class="mb-3">YMR <span>ShipChandlers</span></h4>
+                        <p class="text-white opacity-50 pe-lg-5">Your trusted partner in maritime supplies, delivering excellence across all major Indian ports with quality assurance and 24/7 support.</p>
+                        <div class="footer-social">
+                            <a href="#" class="social-circle"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-circle"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-circle"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" class="social-circle"><i class="fab fa-instagram"></i></a>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-2 col-md-6" data-aos="fade-up" data-aos-delay="200">
-                    <div class="footer-links">
-                        <h5>Quick Links</h5>
-                        <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="about.html">About Us</a></li>
-                            <li><a href="services.html">Services</a></li>
-                            <li><a href="gallery.html">Gallery</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                        </ul>
-                    </div>
+                <div class="col-lg-2 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <h5 class="footer-section-title">Quick Links</h5>
+                    <ul class="footer-nav-list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
                 </div>
-                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
-                    <div class="footer-links">
-                        <h5>Services</h5>
-                        <ul>
-                            <li><a href="services.html">Provision Stores</a></li>
-                            <li><a href="services.html">Safety Equipment</a></li>
-                            <li><a href="services.html">Ship Spares</a></li>
-                            <li><a href="services.html">Onboard Repairs</a></li>
-                        </ul>
-                    </div>
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <h5 class="footer-section-title">Our Services</h5>
+                    <ul class="footer-nav-list">
+                        <li><a href="services.html">Provision Stores</a></li>
+                        <li><a href="services.html">Safety & Piracy Protection</a></li>
+                        <li><a href="services.html">Ship Spares</a></li>
+                        <li><a href="services.html">Onboard Repairs</a></li>
+                    </ul>
                 </div>
-                <div class="col-lg-3" data-aos="fade-up" data-aos-delay="400">
-                    <div class="footer-contact">
-                        <h5>Contact Info</h5>
-                        <div class="contact-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>Gautam Nagar 5th Lane,<br>Brahmapur, Odisha 761001</span>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-envelope"></i>
-                            <span>ymrshipchandlers@gmail.com</span>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-phone"></i>
-                            <span>7788956692 / 8338850999</span>
-                        </div>
+                <div class="col-lg-3" data-aos="fade-up" data-aos-delay="300">
+                    <h5 class="footer-section-title">Contact Info</h5>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Gautam Nagar 5th Lane,<br>Brahmapur, Odisha 761001</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>ymrshipchandlers@gmail.com</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <span>+91 7788956692</span>
                     </div>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <div class="row">
-                    <div class="col-12 text-center">
-                        <p>&copy; 2024 YMR ShipChandlers. All rights reserved.</p>
-                    </div>
-                </div>
+            <div class="footer-bottom-bar">
+                <p>&copy; 2024 YMR ShipChandlers. All rights reserved. | Privacy Policy | Terms of Service</p>
             </div>
         </div>
     </footer>
